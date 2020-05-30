@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+/* Frequent box properties for section elements. */
+
+.locations,
+.program,
+.gifts,
+.questions,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+/* Body styles */
+body {
+  background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+
+/* Full Screen Header */
+.cover {
+  background-image: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  
+  height: 100vh;
+  width: 100vw;
+  color: #444349;
+  text-align: center;
+  display: table;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 .625rem;
+}
+
+.text {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+
+.name {
+  color: #d2ba87;
+  font-size: 4rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.5rem;
+  margin: .5rem auto;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+
+/* Letter Styles */
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p, h3 {
+  font-family: 'Muli', sans-serif;
+}
+
+
+/* Locations Styles */
+
+.picture {
+  float: center;
+  display: inline-block;
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 1rem;
+}
+
+.ceremony, 
+.photos, 
+.party {
+  display: inline-block;
+}
+
+.locations::after {
+  content: "";
+  display: none;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+
+
+/* Program Styles */
+
+.program {
+  background: rgba(42, 39, 21, 0.5);
+  width: 100%;
+  color: #d2ba87;
+}
+
+/* Gift section */
+
+.gift {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+/* FAQ */
+
+.faq {
+  background: rgba(42, 39, 21, 0.5);
+  color: #d2ba87;
+  width: 100%;
+  text-align: center;
+}
+
+.faq p {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+}
+
+.faq h1 {
+  margin-top: 1rem; /* To even out top and bottom margins. */
+}
+.question {
+  font-style: bold;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* Link styles */
+
+a {
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* Footer styles */
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+/* Media queries */
+
+/* Header */
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+
+}
+
+...
+
+@media (min-width: 768px) {
+
+  .text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+
+  .text h1 {
+    font-size: 7rem;
+  }
+
+}
+
+...
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+/* Locations */
+
+@media (min-width: 768px) {
+
+  .ceremony,
+  .photos,
+  .party
+  
+        {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .locations::after {
+    display: none;
+  }
+
+}
+
+/* Program */
+
+@media (min-width: 768px) {
+
+  .program {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+}
+
+/* FAQ */
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h2 {
+    text-align: center;
+  }
+
+}
+
+/* Footer */
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
