@@ -35,7 +35,7 @@ body {
 
 /* Full Screen Header */
 .cover {
-  background-image: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
   
   height: 100vh;
   width: 100vw;
